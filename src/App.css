@@ -1,0 +1,120 @@
+#root {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 2rem;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.85rem 1.1rem;
+  background: #0f8cf1;
+  color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.topbar h1 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.primary {
+  padding: 0.55rem 0.95rem;
+  border-radius: 6px;
+  border: 1px solid #0c79cf;
+  background: #0f8cf1;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 120ms ease, transform 120ms ease;
+}
+
+.primary:hover {
+  background: #0c79cf;
+  transform: translateY(-1px);
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+  overflow: hidden;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background: #f8fafc;
+}
+
+th,
+td {
+  padding: 0.9rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+th {
+  font-weight: 700;
+  color: #0f172a;
+}
+
+td {
+  color: #1f2937;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.actions button {
+  border: none;
+  border-radius: 6px;
+  padding: 0.4rem 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: #fff;
+  transition: opacity 100ms ease, transform 100ms ease;
+}
+
+.actions button:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.view {
+  background: #1d4ed8;
+}
+
+.edit {
+  background: #0ea5e9;
+}
+
+.delete {
+  background: #ef4444;
+}
+
+@media (max-width: 720px) {
+  th,
+  td {
+    padding: 0.75rem 0.5rem;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+}
