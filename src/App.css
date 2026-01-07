@@ -108,6 +108,99 @@ td {
   background: #ef4444;
 }
 
+.toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem;
+  background: #f8fafc;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  flex-wrap: wrap;
+}
+
+.search-box {
+  flex: 1;
+  min-width: 250px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.65rem 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  transition: border-color 150ms ease;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #0f8cf1;
+  box-shadow: 0 0 0 3px rgba(15, 140, 241, 0.1);
+}
+
+.stats {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.stat-item {
+  padding: 0.5rem 0.85rem;
+  background: #ffffff;
+  border-radius: 6px;
+  font-weight: 600;
+  color: #1f2937;
+  border: 1px solid #e5e7eb;
+  font-size: 0.9rem;
+}
+
+.bulk-delete {
+  padding: 0.5rem 0.85rem;
+  border-radius: 6px;
+  border: 1px solid #dc2626;
+  background: #ef4444;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 120ms ease;
+}
+
+.bulk-delete:hover {
+  background: #dc2626;
+}
+
+.sortable {
+  cursor: pointer;
+  user-select: none;
+  transition: background 120ms ease;
+}
+
+.sortable:hover {
+  background: #e5e7eb;
+}
+
+thead input[type="checkbox"] {
+  cursor: pointer;
+}
+
+tbody input[type="checkbox"] {
+  cursor: pointer;
+}
+
+.selected-row {
+  background: #eff6ff !important;
+}
+
+.no-results {
+  text-align: center;
+  color: #64748b;
+  font-style: italic;
+  padding: 2rem !important;
+}
+
 @media (max-width: 720px) {
   th,
   td {
@@ -116,5 +209,14 @@ td {
 
   .actions {
     flex-direction: column;
+  }
+
+  .toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .stats {
+    justify-content: center;
   }
 }
